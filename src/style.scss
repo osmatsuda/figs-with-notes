@@ -1,0 +1,50 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-figs-with-notes {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 1rem 1rem;
+
+    >figure {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 .5rem;
+
+	>img {
+	    flex: 0 0 content;
+	    margin-right: 1rem;
+	    outline: none;
+
+	    &:last-child {
+		margin-right: 0;
+	    }
+	    &.showup {
+		outline: 3px solid gold;
+		box-shadow: darkgray 0 0 .5rem;
+	    }
+	}
+    }
+    >figcaption {
+	text-align: center;
+	margin-bottom: 0;
+
+	a {
+	    display: inline-block;
+	    margin-left: .5rem;
+	    margin-right: .5rem;
+	    color: unset;
+
+	    &.showup {
+		color: black;
+		text-shadow: gold 0 0 .5rem;
+	    }
+	}
+    }
+}

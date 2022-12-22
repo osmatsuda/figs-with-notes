@@ -1,0 +1,69 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-figs-with-notes {
+    border: 1px dotted #ddd;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: .25rem;
+
+    >figure {
+	flex: 0 0 content;
+	flex-flow: column nowrap;
+	display: flex;
+	margin-right: .5rem;
+	justify-content: stretch;
+
+	>.img-wrapper {
+	    width: 200px;
+	    height: 200px;
+	    overflow: hidden;
+	    margin-bottom: .5rem;
+	    border: 1px solid gray;
+
+	    img {
+		max-width: unset;
+	    }
+	    &.overflow-right {
+		border-right: 4px dashed gray;
+	    }
+	    &.overflow-bottom {
+		border-bottom: 4px dashed gray;
+	    }
+	}
+	>.size-control {
+	    display: flex;
+	    flex-flow: row nowrap;
+	    justify-content: center;
+
+	    input {
+		display: inline-block;
+		width: 4rem;
+	    }
+	    >div:first-child {
+		margin-right: 1rem;
+	    }
+	}
+	>figcaption .components-base-control__field {
+	    display: flex;
+	    flex-flow: column nowrap;
+
+	    label {
+		margin-bottom: .25rem;
+	    }
+	}
+    }
+
+    .components-form-file-upload .components-button {
+	color: #66a;
+	font-weight: bold;
+	padding: .25rem .75rem;
+	border: 1px solid #aac;
+	border-radius: 5px;
+	background-color: #ccf;
+    }
+}

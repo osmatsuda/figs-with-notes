@@ -1,0 +1,59 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "create-block/figs-with-notes",
+    "version": "0.1.0",
+    "title": "Figs With Notes",
+    "category": "media",
+    "icon": "images-alt2",
+    "description": "Embed images in a flex-box toward main axis. Captions follow images box with pointing interaction.",
+    "attributes": {
+	"iid": {
+	    "type": "string",
+	    "source": "attribute",
+	    "selector": "figure.wp-block-create-block-figs-with-notes",
+	    "attribute": "data-iid"
+	},
+	"items": {
+	    "type": "array",
+	    "default": [],
+	    "source": "query",
+	    "selector": "figure>img",
+	    "query": {
+		"url": {
+		    "type": "string",
+		    "source": "attribute",
+		    "attribute": "src"
+		},
+		"alt": {
+		    "type": "string",
+		    "source": "attribute",
+		    "attribute": "alt"
+		},
+		"caption": {
+		    "type": "string",
+		    "source": "attribute",
+		    "attribute": "title"
+		},
+		"width": {
+		    "type": "integer",
+		    "source": "attribute",
+		    "attribute": "width"
+		},
+		"height": {
+		    "type": "integer",
+		    "source": "attribute",
+		    "attribute": "height"
+		}
+	    }
+	}
+    },
+    "supports": {
+	"html": false
+    },
+    "textdomain": "figs-with-notes",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./figs-with-notes.js"
+}
