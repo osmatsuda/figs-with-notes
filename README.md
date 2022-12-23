@@ -1,6 +1,6 @@
 # Figs With Notes
 
-[WIP](https://osmatsuda-b.sakura.tv/2022/12/22/figs-with-notes-plugin/)
+[WIP](https://osmatsuda-b.sakura.tv/2022/12/23/figs-with-notes-plugin/)
 
 ## TODO
 
